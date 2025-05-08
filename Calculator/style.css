@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+body {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    background: url(pexels-didsss-29140634.jpg) repeat-y;
+
+}
+
+.main {
+    /* border: 2px solid rgba(96, 96, 88, 0.837); */
+    font-size: 2rem;
+    width: 18rem;
+    height: 20rem;
+    border-radius: 12px;
+    box-shadow: 0px 3px 15px 0px whitesmoke;
+    opacity: 0;
+    transform: scale(5);
+    animation: main 0.5s forwards ease-out;
+}
+
+@keyframes main {
+    to{
+        opacity: 2;
+        transform: scale(1);
+    }
+}
+
+.main:hover {
+    box-sizing: 25px 25px 25px 25px lightgray ;
+    transform:scale(1.1);
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 12px;
+    font-size: large;
+    box-shadow: 0px 3px 10px 0px rgb(8, 122, 198);
+    cursor: pointer;
+
+}
+
+input {
+    width: 16rem;
+    margin: 10px;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: transparent;
+    color: lightskyblue;
+    border: none;
+}
